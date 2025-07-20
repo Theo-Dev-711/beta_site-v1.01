@@ -1,13 +1,11 @@
 export interface Product {
-    [x: string]: any;
-    
-    id: number;
-    title: string;
-    price: number;
-    description:string;
-    category:{
-        id: number;
-        name: string;
-        image: string;
-    }
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: {
+    name: string;
+  };
+  images: string[]; // Added type definition for images
+  // other properties...
 }

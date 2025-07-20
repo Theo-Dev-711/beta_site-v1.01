@@ -14,9 +14,10 @@ interface ProductCartProps {
 
 export default function ProductCart({ product }: ProductCartProps) {
 
-    const imageUrl = product.images[0].startsWith("http")
-        ? product.images[0]
-        : `https://i.imgur.com/${product.images[0]}.jpg`;
+    const imageUrl =
+        product.images[0].startsWith("http")
+            ? product.images[0]
+            : `https://i.imgur.com/${product.images[0]}.jpg`;
 
     return (
         <Card key={product.id} className='p-0 flex flex-col justify-between '>
